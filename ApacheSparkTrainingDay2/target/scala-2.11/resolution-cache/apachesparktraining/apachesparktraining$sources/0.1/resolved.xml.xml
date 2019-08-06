@@ -4,7 +4,7 @@
 		module="apachesparktraining$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190806204916"
+		publication="20190805103122"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

@@ -18,10 +18,10 @@ object ScalaBasicsMain
 {
   def main(args:Array[String]):Unit ={
     val basics:ScalaLanguageBasics = new ScalaLanguageBasics()
-    basics.HelloWorld()
+    basics.HelloWorld();
     basics.ImmutableVariables()
     basics.MutableVariables()
-    System.out.println(basics.LazyInitialization())
+    System.out.println(basics.LazyInitialization());
     basics.SupportedDataTypes()
     basics.InitializeWithoutValue()
     basics.StringInterpolation()
