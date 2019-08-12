@@ -1,8 +1,0 @@
-*.class
-*.log
-*.dat
-*.ctrl
-./ApacheSparkTrainingDay1/metastore_db/*
-./ApacheSparkTrainingDay1/spark-warehouse/*
-./ApacheSparkTrainingDay1/project/target/*
-./ApacheSparkTrainingDay1/.idea/libraries/*

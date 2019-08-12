@@ -65,7 +65,7 @@ class SparkRDDBasics {
     /**map(func):Return a new distributed dataset formed by passing each element of the source through
     a function func.*/
     val mapData = sparkSession.read.textFile(s"file:///$inputPath/src/Input/justwords").rdd
-    val mapFile = mapData.map(line => (line,line.length))
+    val mapFile = mapData.map((line) => (line,line.length))
     mapFile.foreach(println)
 
     /**flatMap(func):Similar to map, but each input item can be mapped to 0 or more output items (so func
