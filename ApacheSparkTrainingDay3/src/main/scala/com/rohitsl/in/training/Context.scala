@@ -7,8 +7,8 @@ trait Context {
   val warehouseLocation = new File("spark-warehouse").getAbsolutePath
   lazy val sparkConf = new SparkConf()
     //.setMaster("spark://localhost:7077")
-    .setMaster("local[1]")
-    .set("spark.cores.max", "1")
+    .setMaster("local[*]")
+    //.set("spark.cores.max", "1")
     .set("spark.sql.warehouse.dir", warehouseLocation)
     .set("spark.driver.bindAddress", "127.0.0.1")
 
@@ -19,6 +19,6 @@ trait Context {
     .enableHiveSupport()
     .getOrCreate()
 
-  //sparkSession.sparkContext.setLogLevel("ERROR")
+    sparkSession.sparkContext.setLogLevel("ERROR")
 
 }
